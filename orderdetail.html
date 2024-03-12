@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Details</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    h2 {
+      color: #4caf50;
+      text-align: center;
+    }
+    .order-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .detail {
+      margin-bottom: 10px;
+    }
+    .label {
+      font-weight: 500;
+    }
+    .value {
+      font-weight: 400;
+    }
+    .status {
+      color: #4caf50;
+    }
+    .order-image {
+      grid-column: span 2;
+      text-align: center;
+    }
+    .order-image img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Order Details</h2>
+    <div class="order-details">
+      <div class="detail order-image">
+        <img src="https://via.placeholder.com/400" alt="Order Image">
+      </div>
+      <div class="detail">
+        <label class="label">Invoice:</label>
+        <span class="value">INV12345</span>
+      </div>
+      <div class="detail">
+        <label class="label">Order No:</label>
+        <span class="value">ORD54321</span>
+      </div>
+      <div class="detail">
+        <label class="label">Customer Name:</label>
+        <span class="value">John Doe</span>
+      </div>
+      <div class="detail">
+        <label class="label">Total Price:</label>
+        <span class="value">$150.00</span>
+      </div>
+      <div class="detail">
+        <label class="label">Status:</label>
+        <span class="value status">Paid</span>
+      </div>
+      <div class="detail">
+        <label class="label">Invoice Date:</label>
+        <span class="value">2024-03-08</span>
+      </div>
+      <div class="detail">
+        <label class="label">Shipping Address:</label>
+        <span class="value">123 Street, City, Country</span>
+      </div>
+      <div class="detail">
+        <label class="label">Payment Method:</label>
+        <span class="value">Credit Card</span>
+      </div>
+      <div class="detail">
+        <label class="label">Items:</label>
+        <span class="value">1 x Product A, 2 x Product B</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

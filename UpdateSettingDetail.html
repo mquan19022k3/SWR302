@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Update Setting Detail </title>
+    <link rel="stylesheet" href="css/style5.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Update Setting Detail</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Setting Name</span>
+            <input type="text" value="Install system settings" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Configure Security System</span>
+            <input type="text" value="FireWall" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Language And Region</span>
+            <select name="language" class="form-control">
+                <option value=1>VietNam</option>
+                <option value=2>Singapore</option>
+                <option value=3>Laos</option>
+                <option value=1>ThaiLand</option>
+                <option value=2>Japan</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Set Date Format</span>
+            <select name="datetime" class="form-control">
+                <option value=1>MM/DD/YYYY</option>
+                <option value=2>DD/MM/YYYY</option>
+                <option value=3>YYYY/MM/DD</option>
+                <option value=1>12 hour AM/PM</option>
+                <option value=2>24 hour</option>
+            </select>
+          </div>
+          <div class="input-box">
+            <span class="details">Set Time Format</span>
+            <select name="datetime" class="form-control">
+                <option value=1>12 hour AM/PM</option>
+                <option value=2>24 hour</option>
+            </select>
+          </div>
+          
+          <div class="input-box">
+            <span class="details">
+                Set up email sending (SMTP)</span>
+                <input type="text" value="Add new set up" required>
+          </div>
+          
+        </div>
+        
+        <div class="button">
+          <input type="submit" value="Save"> <input type="submit" value="Cancel">
+        </div>
+        
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
