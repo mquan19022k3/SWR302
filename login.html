@@ -113,22 +113,21 @@
         </script>
         <script type="text/javascript">
             document.addEventListener("DOMContentLoaded", function() {
-                const form = document.querySelector('form');
-        
-                form.addEventListener('submit', function(event) {
-                    event.preventDefault(); // Prevent the default form submission
-        
-                    const username = form.elements['user'].value.trim(); // Get the value of username input and trim any leading/trailing whitespace
-                    const password = form.elements['pass'].value.trim(); // Get the value of password input and trim any leading/trailing whitespace
-        
-                    if (username !== '' && password !== '') { // Check if both username and password are not empty
-                        window.location.href = 'HomePage.html'; // Redirect to homepage.html
-                    } else {
-                        // If either username or password is empty, you can display an error message or take other actions as needed
-                        alert('Please enter both username and password.');
-                    }
-                });
-            });
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        const username = form.elements['user'].value.trim(); // Get the value of username input and trim any leading/trailing whitespace
+        const password = form.elements['pass'].value.trim(); // Get the value of password input and trim any leading/trailing whitespace
+
+        if (username === 'mquan' && password === '123456') { // Check if username and password match the desired credentials
+            window.location.href = 'Dashboard.html'; // Redirect to dashboard.html
+        } else {
+            window.location.href = 'HomePage.html'; // Redirect to homepage.html
+        }
+    });
+});
         </script>
     </body>
 </html>
